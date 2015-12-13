@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.umich.kbalouse.recognize">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Holo.NoActionBar"
+        android:keepScreenOn="true">
+        <activity
+            android:name=".MainActivity"
+            android:icon="@drawable/ic_glass_logo"
+            android:label="@string/title_activity_main"
+            android:gravity="center"
+            android:keepScreenOn="true">
+            <intent-filter>
+                <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.google.android.glass.VoiceTrigger"
+                android:resource="@xml/voice_trigger" />
+        </activity>
+        <activity
+            android:name=".PhotoActivity"
+            android:icon="@drawable/ic_glass_logo"
+            android:label="@string/title_activity_main"
+            android:parentActivityName="edu.umich.kbalouse.recognize.MainActivity"
+            android:keepScreenOn="true">
+        </activity>
+    </application>
+
+</manifest>
