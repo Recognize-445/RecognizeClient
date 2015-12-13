@@ -30,7 +30,7 @@ import java.util.concurrent.ExecutionException;
  */
 public class RecognizeRequestor {
     private String name;
-    private final String host = "216.106.158.99";
+    private final String host = "216.106.156.136";
     private final int port = 9090;
 
     public String sendRequest(ByteArrayOutputStream photoBytes) {
