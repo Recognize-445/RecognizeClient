@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Recognize</string>
+    <string name="title_activity_main">Recognize</string>
+    <string name="help_text">Tap to recognize someone!</string>
+</resources>
